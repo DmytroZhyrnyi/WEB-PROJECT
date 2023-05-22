@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+--gap: 0.5em;
+--index: calc(1vw + 1vh);
+--color-dark: #000;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: outfit-c;
+    src: url(/fonts/BalooBhaijaan2-Bold.woff2);
+}
+
+.header {
+    text-transform: uppercase;
+    font-family: outfit-c;
+    letter-spacing: .1em;
+    font-size: calc(var(--index) * 3);
+    position: absolute;
+    font-weight: 30;
+    opacity: .9;
+}
+
+.header span {
+    text-align: center;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 0.75);
+    margin-top: 7px;
+}
+
+.gallery {
+    width: 30vw;
+    column-width: 2em;
+gap: var(--gap);
+transform: scale(10);
+will-change: transform;
+transition: transform 1s cubic-bezier(.075, 1, 25, 1);
+transition: opacity 2s;
+}
+
+.gallery_item {
+margin-bottom: var(--gap);
+transform: scale(1.001);
+will-change: transform;
+transition: .3s;
+}
+
+.gallery_item:hover {
+transform: scale(1.1)
+}
+
+.gallery_item img {
+    width: 100%;
+    display: block;
+}
+
+.loaded .gallery {
+    opacity: 1;
+}
+.loaded .header span {
+    opacity: 0;
+}
+
+/* DARK MODE OS*/
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color:var(--color-dark);
+    }
+    .header {
+        filter: invert(100%)
+    }
+}

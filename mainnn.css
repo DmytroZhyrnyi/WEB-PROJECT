@@ -37,3 +37,12 @@ p {
     transform: translateY(150%)
 
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color:var(--color-dark);
+    }
+    .contacts {
+        filter: invert(100%)
+    }
+}

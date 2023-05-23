@@ -14,11 +14,11 @@
 
 @font-face {
     font-family: raleway-c;
-    src: url(../fonts/raleway-regular.woff2);
+    src: url(fonts/raleway-regular.woff2);
 }
 @font-face {
     font-family: outfit-c;
-    src: url(../fonts/BalooBhaijaan2-Bold.woff2);
+    src: url(fonts/BalooBhaijaan2-Bold.woff2);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: outfit-c;

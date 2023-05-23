@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* для отображения на всех девайсах */
+:root {
+    --index: calc(1vw + 1vh);
+    --color-header: #272727;
+    --color-text: #272727;
+    --gallery-gap: calc(var(--index) *7.5);
+    --color-dark: #000;
+}
+
+@font-face {
+    font-family: raleway-c;
+    src: url(../fonts/raleway-regular.woff2)
+}
+@font-face {
+    font-family: outfit-c;
+    src: url(../fonts/BalooBhaijaan2-Bold.woff2);
+}
+.main-title {
+    font-family: outfit-c;
+}
+p {
+    font-family: raleway-c;
+}
+.contacts {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 27px;
+    position: relative;
+    top: 150%;
+    transform: translateY(150%)
+
+}

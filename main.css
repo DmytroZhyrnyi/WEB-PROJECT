@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gallery__right .gallery__item {
-  top: -139px;
+  top: -13px;
   margin: 35px;
   margin-top: var(--gallery-gap);
 }
